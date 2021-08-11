@@ -12,7 +12,9 @@
 
 # capitalize-loader
 
-A sh loader for webpack. Transform .sh file to an object.
+A capitalize loader for webpack. Just capitalize the source content.
+
+> i like skating. >>> I Like Skating.
 
 ## Getting Started
 
@@ -43,32 +45,32 @@ You can also provide some `options` for the loader. For example:
 
 ```js
 {
-        test: /\.txt$/,
-        use: {
-            loader: 'capitalize-loader',
-            options: {
-              regExp: /(^|\s+|\W)[a-z]{1}/g,
-              outputPath: './dist',
-              fileName: '[name]-[contenthash:5].[ext]',
-              processor: (source, options) => {
-                return source.replace(/raw/, 'short');
-              }
+    test: /\.txt$/,
+    use: {
+        loader: 'capitalize-loader',
+        options: {
+            regExp: /(^|\s+|\W)[a-z]{1}/g,
+            outputPath: './dist',
+            fileName: '[name]-[contenthash:5].[ext]',
+            processor: (source, options) => {
+                return source.replace(/raw/, 'short')
             }
-          }
-      }
+        }
+    }
+}
 ```
 
 And run `webpack` via your preferred method.
 
 ## Options
 
-|      Name      |     Type     |       Default        | Description                          |
-| :------------: | :----------: | :------------------: | ------------------------------------ |
-|  **esModule**  | `{Boolean}`  |         true         | use ES module syntax, default as cjs |
-|   **regExp**   |  `{RegExp}`  | /(^\| \s+)[a-z]{1}/g | regExp for content parse             |
-| **processor**  | `{Function}` |         null         | custom processor                     |
-| **outputPath** |  `{String}`  |          ./          | output path                          |
-|  **fileName**  |  `{String}`  |         null         | output filename                      |
+|      Name      |     Type     |       Default        | Description                           |
+| :------------: | :----------: | :------------------: | ------------------------------------- |
+|  **esModule**  | `{Boolean}`  |         true         | use ES module syntax, default as cjs  |
+|   **regExp**   |  `{RegExp}`  | /(^\| \s+)[a-z]{1}/g | regExp for content parse              |
+| **processor**  | `{Function}` |         null         | custom processor \| (source, options) |
+| **outputPath** |  `{String}`  |          ./          | output path                           |
+|  **fileName**  |  `{String}`  |         null         | output filename                       |
 
 ## License
 
