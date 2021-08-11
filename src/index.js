@@ -19,7 +19,7 @@ module.exports = function loader(source) {
     if (options.fileName) {
       const fs = require('fs')
       const path = require('path')
-      const pathName = path.resolve(__dirname, '../', options.outputPath)
+      const pathName = path.resolve(process.cwd(), options.outputPath)
       const fileName = loaderUtils.interpolateName(this, options.fileName, {
         content: output
       });
