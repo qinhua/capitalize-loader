@@ -1,7 +1,6 @@
 const loader = require('../src/index')
 const fs = require('fs')
 const path = require('path')
-
 describe('==== Test Output ====', () => {
   test('capitalize', () => {
     const ctx = {}
@@ -43,9 +42,20 @@ describe('==== Test Output ====', () => {
     const res = loader.call(ctx, src)
     expect(res.toString().includes('I hate skating.')).toBe(true)
   })
-  test('throw-error', () => {
+  test('empty', () => {
+    const res = loader.call({}, '')
+    expect(res).toBe('')
+  })
+  test('throw error', () => {
     const src = 123456
     const res = loader.call({}, src)
     expect(res.toString().includes('Error: TypeError')).toBe(true)
   })
 })
+
+afterAll(() => {
+  fs.rmdirSync(path.resolve(__dirname, '../out'), {
+    recursive: true,
+    force: true
+  })
+});

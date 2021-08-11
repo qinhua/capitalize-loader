@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "test": "jest --coverage",
-    "codecov": "codecov -t 1f9803db-7ad8-44cd-b0ee-89f6d5908b8b"
+    "codecov": "codecov -t b818d3c5-8cd3-445f-afa0-f674365f8346"
   },
   "repository": {
     "type": "git",
