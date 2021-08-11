@@ -1,0 +1,41 @@
+{
+  "name": "capitalize-loader",
+  "version": "1.0.0",
+  "description": "A capitalize loader for webpack.",
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "jest --coverage",
+    "codecov": "codecov -t 1f9803db-7ad8-44cd-b0ee-89f6d5908b8b"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qinhua/capitalize-loader.git"
+  },
+  "keywords": [
+    "webpack",
+    "loader",
+    "capitalize",
+    "capitalize-loader"
+  ],
+  "author": "BabyChin",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10.22.0",
+    "npm": ">= 5.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/qinhua/capitalize-loader/issues"
+  },
+  "homepage": "https://github.com/qinhua/capitalize-loader#readme",
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true,
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.jsx?$"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
