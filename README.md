@@ -6,6 +6,8 @@
 
 <h1 align="center">capitalize-loader</h1>
 
+<p align="center">A capitalize loader for webpack. Just capitalize the source content.</p>
+
 <p align="center">
   <a href="https://npmjs.com/package/capitalize-loader">
     <img alt="npm" src="https://img.shields.io/badge/npm-v5.0.0-blue" />
@@ -20,8 +22,6 @@
     <img alt="size" src="https://packagephobia.now.sh/badge?p=capitalize-loader" />
   </a>
 </p>
-
-<p align="center">A capitalize loader for webpack. Just capitalize the source content.</p>
 
 
 ## Getting Started
