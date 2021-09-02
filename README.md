@@ -3,20 +3,30 @@
     <img width="200" height="200" src="https://webpack.js.org/assets/icon-square-big.svg">
   </a>
 </div>
-<br/>
 
-[![npm][npm]][npm-url]
-[![node][node]][node-url]
-[![cover][cover]][cover-url]
-[![size][size]][size-url]
+<h1 align="center">capitalize-loader</h1>
 
-# capitalize-loader
+<p align="center">
+  <a href="https://npmjs.com/package/capitalize-loader">
+    <img alt="npm" src="https://img.shields.io/badge/npm-v5.0.0-blue" />
+  </a>
+  <a href="https://nodejs.org">
+    <img alt="npm" src="https://img.shields.io/node/v/capitalize-loader.svg" />
+  </a>
+  <a href="https://codecov.io/gh/qinhua/capitalize-loader">
+    <img alt="coverage" src="https://codecov.io/gh/qinhua/capitalize-loader/branch/main/graph/badge.svg?token=KSB3Z41HLW" />
+  </a>
+  <a href="https://packagephobia.now.sh/result?p=capitalize-loader">
+    <img alt="size" src="https://packagephobia.now.sh/badge?p=capitalize-loader" />
+  </a>
+</p>
 
-A capitalize loader for webpack. Just capitalize the source content.
+<p align="center">A capitalize loader for webpack. Just capitalize the source content.</p>
 
-> i like skating. >>> I Like Skating.
 
 ## Getting Started
+
+> i like skating. &nbsp;>>>&nbsp; I Like Skating.
 
 To begin, you'll need to install `capitalize-loader`:
 
@@ -75,12 +85,3 @@ And run `webpack` via your preferred method.
 ## License
 
 [MIT](./LICENSE)
-
-[npm]: https://img.shields.io/badge/npm-v5.0.0-blue
-[npm-url]: https://npmjs.com/package/capitalize-loader
-[node]: https://img.shields.io/node/v/capitalize-loader.svg
-[node-url]: https://nodejs.org
-[cover]: https://codecov.io/gh/qinhua/capitalize-loader/branch/main/graph/badge.svg?token=KSB3Z41HLW
-[cover-url]: https://codecov.io/gh/qinhua/capitalize-loader
-[size]: https://packagephobia.now.sh/badge?p=capitalize-loader
-[size-url]: https://packagephobia.now.sh/result?p=capitalize-loader
